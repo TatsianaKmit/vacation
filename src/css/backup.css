@@ -1,0 +1,154 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.backgound-wrapper {
+    background-image: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.03) 2.5%,
+            rgba(27, 30, 34, 0.4) 42.42%,
+            #1b1e22 80.67%),
+        url(../img/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row {
+    justify-content: space-between;
+}
+
+h1 {
+    margin-bottom: 26px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    ;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 41px;
+}
+
+.lang {
+    padding-top: 57px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+nav a {
+    display: inline-block;
+    margin-top: 54px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.section1 .content1 {
+    width: 68%;
+    padding: 165px 0 259px 0;
+}
+
+.padding-wrapper {
+    padding: 20px 20px;
+}
+
+.section2 .col-4 {
+    padding: 0;
+    width: 30%;
+    background: #23282F;
+    border-radius: 4px;
+}
+
+.section2 img {
+    width: 100%;
+}
+
+.section2 p {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.more {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: bottom;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.section3 {
+    padding: 62px 0 68px 0;
+    background-image: url(../img/background2-black.png), url(../img/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+
+.section3 p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.section3 p.number {
+    margin-bottom: 35px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 78px;
+    line-height: 58px;
+    text-align: center;
+    color: #FFB800;
+}
+
+.content3 img {
+    display: inline-block;
+    margin-bottom: 17px;
+}
+
+.content3 .row {
+    padding: 44px 0 58px 0;
+}
+
+.content3 .col-3 {
+    width: 23%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.places {
+    background-image: url(../img/background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

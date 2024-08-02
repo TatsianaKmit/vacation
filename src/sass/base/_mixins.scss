@@ -1,0 +1,26 @@
+@use './variables';
+
+@mixin buttonYellowBorder {
+    background-color: transparent;
+    border: 1px solid variables.$yellow;
+    border-radius: 10px;
+    color: variables.$white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    height: 48px;
+    width: 146px;
+    cursor: pointer;
+}
+
+@mixin buttonYellowBackground {
+    background-color: variables.$yellow;
+    color: variables.$black;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    height: 36px;
+    width: 360px;
+    border-radius: 4px;
+    cursor: pointer;
+}
