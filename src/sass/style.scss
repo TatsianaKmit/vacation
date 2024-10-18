@@ -11,7 +11,7 @@ body {
 
 .background {
     &__wrapper {
-        background-image: variables.$gradient;
+        background-image: variables.$background-gradient;
         background-size: cover;
         background-repeat: no-repeat;
         height: 1032px;
@@ -166,7 +166,6 @@ select {
     }
 }
 
-
 option {
     background-color: transparent !important;
 }
@@ -201,7 +200,6 @@ option {
     }
 }
 
-
 .directions {
     &__button {
         @include mixins.buttonYellowBorder();
@@ -223,6 +221,7 @@ option {
         border-radius: 4px;
         background-color: variables.$gray;
         margin-bottom: 24px;
+        position: relative;
     }
 
     .col {
@@ -235,6 +234,12 @@ option {
     &__wrapper {
         margin: 0 auto;
         width: 321px;
+
+
+        &_small {
+            margin: 0 auto;
+            width: 222px;
+        }
     }
 
     &__image {
@@ -297,7 +302,33 @@ option {
             line-height: 16px;
             color: variables.$white;
             opacity: 0.5;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
         }
+    }
+
+    &__info {
+        width: 222px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 21px;
+        left: 21px;
+    }
+
+    &__date {
+        font-size: 13px;
+        line-height: 16px;
+        color: rgba(variables.$white, 0.5);
+    }
+
+    &__comments {
+        @extend .card__date;
+    }
+
+    &__likes {
+        @extend .card__date
     }
 }
 
@@ -355,15 +386,20 @@ option {
     }
 
     &__screen {
-        background-image: linear-gradient(180deg,
-                rgba(255, 255, 255, 0.03) 2.5%,
-                rgba(27, 30, 34, 0.4) 42.42%,
-                rgba(27, 30, 34, 0.4) 42.42%), url(../img/background3.png);
+        background-image: variables.$screen-gradient;
         background-size: cover;
         background-repeat: no-repeat;
         height: 480px;
         width: 552px;
         border-radius: 4px;
+    }
+
+    &__card {
+        background-color: variables.$gray;
+        height: 480px;
+        width: 264px;
+        border-radius: 4px;
+        position: relative;
     }
 
     .col {
@@ -379,6 +415,21 @@ option {
     }
 }
 
+.screen {
+    &__title {
+        font-size: 34px;
+        line-height: 38px;
+        text-align: center;
+        padding: 51px 15px 28px 15px;
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+    }
+}
+
 .feedback {
     &__title {
         font-size: 34px;
@@ -387,8 +438,19 @@ option {
     }
 }
 
-
-
 .row {
     justify-content: space-between;
+}
+
+.footer {
+    a {
+        color: variables.$white;
+    }
+
+    height: 76px;
+    margin: 61px 0 16px;
+
+    &__title {
+        color: variables.$yellow;
+    }
 }
